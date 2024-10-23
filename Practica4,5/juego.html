@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Juego </title>
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="icono.png">
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <div class="parametros">
+                <form>
+                    <fieldset style="border-radius: 15px;">
+                        <legend>Configuración</legend>
+                        <label>Nombre</label><br>
+                        <input type="text" id="nombre1" placeholder="Jugador 1" maxlength="10"/><br>
+                        <label>Color</label>
+                        <input type="color" id="color1" value="#FFC334"/><br>
+                        <label>Nombre</label><br>
+                        <input type="text" id="nombre2" placeholder="Jugador 2" maxlength="10"/><br>
+                        <label>Color</label>
+                        <input type="color" id="color2" value="#FF4252"/>
+                    </fieldset>
+                </form>
+                <div class="volumen">
+                    <form> 
+                        <label>VOLUMEN</label>
+                        <input type="range" id="volumen" min="0" max="1" step="0.1" value="0.5"/>
+                    </form>
+                </div>
+                <button id="boton">START</button>
+            </div>
+            <div class="juego">
+                <canvas id="canvas" width="700" height="700"></canvas>
+            </div>
+        </div>
+        <audio id="bala" src="disparo.mp3" crossorigin="anonymous"></audio>
+        <audio id="musica" src="musica.mp3" crossorigin="anonymous"></audio>
+        <script src="script.js"></script>
+    </body>
+</html>

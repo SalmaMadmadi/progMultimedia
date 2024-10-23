@@ -1,0 +1,49 @@
+/* Media queries - Vista smartphone */
+@media only screen and (max-width: 600px){
+    div.responsive{
+      max-width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    div.imagenes{
+      flex-direction: column;
+    }
+    img.responsive{
+        height: auto;
+        margin: 40px 25%;
+    }
+
+    li.menuitem{
+        display: block;
+    }
+
+    div.cabecerainicio{
+        padding: 0 10px;
+    }
+    
+    p.titulo1{
+          font-size: 40px;
+          padding: 30px;
+          
+    }
+    
+    p.titulo2{
+          font-size: 30px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+    }
+      
+    nav li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .col-25, .col-50, .col-75, input[type=submit]{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+

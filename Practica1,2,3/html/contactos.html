@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <title>Contacto</title>
+      <meta charset="utf-8">
+      <link rel="icon" href="../img/icono.png" type="image/png">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+      <link href="../css/principal.css" rel="stylesheet" type="text/css">
+      <link href="../css/contactos.css" rel="stylesheet" type="text/css">
+      <link href="../css/mediaqueries.css" rel="stylesheet" type="text/css">
+    <script>
+      function enviarMensaje()
+      {
+        if(document.getElementById("fnombre").value != "" && document.getElementById("femail").value != "" && document.getElementById("fmensaje").value != "")
+          alert('Mensaje enviado');
+      }
+
+    </script>
+  </head>
+    <body>
+        <div class="cabecerainicio">
+            <p class="titulo1">INGENIERIA MULTIMEDIA</p>
+            <p class="titulo2">SALMA MADMADI AYAD</p>
+        </div>
+        <nav class="menu">
+            <ul class="menu">
+                <li> <a class="menu" href="../index.html">Inicio             </a></li>
+                <li> <a class="menu" href="trabajos.html">Trabajos           </a></li>
+                <li> <a class="menu active" href="contactos.html">Contactos  </a></li>
+                <li> <a class="menu" href="sobremi.html">Sobre mi            </a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="titulo">CONTACTO</h1>
+            <form action="#">
+              <div class="row">
+                <div class="col-50">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fnombre">Nombre*</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fnombre" name="fnombre" placeholder="Tu nombre" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fapellido">Apellido</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fapellido" name="fapellido" placeholder="Tu apellido">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="femail">Email*</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="femail" name="femail" placeholder="Tu email" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="ftelefono">Telefono</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="tel" id="ftelefono" name="ftelefono" placeholder="Tu telefono">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-50">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="fmensaje">Mensaje*</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="fmensaje" name="fmensaje" placeholder="Escribe tu mensaje.." style="height:215px" required></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Enviar" onclick="enviarMensaje()">
+                </div>
+            </form>
+        </div>
+        </body>
+        </html>
+    </body>
+</html>

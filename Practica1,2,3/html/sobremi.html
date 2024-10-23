@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Sobre mi</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="../img/icono.png" type="image/png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+        <link href="../css/principal.css" rel="stylesheet" type="text/css">
+        <link href="../css/trabajos.css" rel="stylesheet" type="text/css">
+        <link href="../css/mediaqueries.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+        <style> @import url("https://unpkg.com/leaflet@1.9.3/dist/leaflet.css");
+                #map { height: 520px; }
+        </style>
+
+    </head>
+    <body>
+        <div class="cabecerainicio">
+            <p class="titulo1">INGENIERIA MULTIMEDIA</p>
+            <p class="titulo2">SALMA MADMADI AYAD</p>
+
+        </div>
+        <nav class="menu">
+            <ul class="menu">
+                <li> <a class="menu" href="../index.html">Inicio             </a></li>
+                <li> <a class="menu" href="trabajos.html">Trabajos           </a></li>
+                <li> <a class="menu" href="contactos.html">Contactos  </a></li>
+                <li> <a class="menu active" href="sobremi.html">Sobre mi            </a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <div class="left">
+                <h1 class="titulo">SOBRE MI</h1>
+                <p>Soy Salma Madmadi, estoy en el 3er curso de Ingeniería Multimedia en la ETSE. Este es mi porfolio :) </p>
+            </div>
+
+            <div class="right">
+                <div id="map" style="z-index: 1"></div>
+            </div>
+        </div>
+
+        <footer style="z-index: 2">
+            <ul class="iconos">
+                <li><a href="#"><img src="../img/facebook.png" alt="Facebook">     </a></li>
+                <li><a href="#"><img src="../img/instagram.png" alt="Instagram">   </a></li>
+                <li><a href="#"><img src="../img/twitter.png" alt="Twitter">       </a></li>
+                <li><a href="#"><img src="../img/correo.png" alt="Gmail">          </a></li>
+                <li><a href="#"><img src="../img/youtube.png" alt="Youtube">       </a></li>
+                <li><a href="#"><img src="../img/telefono.png" alt="Telefono">     </a></li>
+                <li><a href="#"><img src="../img/whatsapp.png" alt="Whatsapp">     </a></li>
+            </ul>
+        </footer>
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+        <script>
+            var map = L.map('map').setView([39.5129836, -0.4257101], 13);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+            var marker = L.marker([39.5129836, -0.4257101]).addTo(map);
+            var circle = L.circle([39.509971, -0.420382], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 100
+            }).addTo(map);
+            var popup = L.popup()
+            .setLatLng([39.509971, -0.420382])
+            .setContent("Facultad de Farmacia.")
+            .openOn(map);
+
+        </script>
+    </body>
+</html>

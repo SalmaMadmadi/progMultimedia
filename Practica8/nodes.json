@@ -1,0 +1,97 @@
+{
+    "nodes": [
+      {"id": "Rickard Stark", "edad": 72, "relacion": 3, "generacion": 1, "familia": "Stark"},
+      {"id": "Lyarra Stark", "edad": 68, "relacion": 3, "generacion": 1,  "familia": "Stark"},
+      
+      {"id": "Catelyn Stark", "edad": 42, "relacion": 2, "generacion": 2,  "familia": "Stark"},
+      {"id": "Eddard Stark", "edad": 52, "relacion": 2, "generacion": 2,  "familia": "Stark"},
+      {"id": "Brandon Stark", "edad": 40, "relacion": 2, "generacion": 2,  "familia": "Stark"},
+      {"id": "Benjen Stark", "edad": 46, "relacion": 2, "generacion": 2,  "familia": "Stark"},
+      {"id": "Lyanna Stark", "edad": 29, "relacion": 1, "generacion": 2,  "familia": "Stark"},
+      
+      
+      {"id": "Robb Stark", "edad": 30, "relacion": 4, "generacion": 3,  "familia": "Stark"},
+      {"id": "Sansa Stark", "edad": 22, "relacion": 4, "generacion": 3,  "familia": "Stark"},
+      {"id": "Arya Stark", "edad": 15, "relacion": 4, "generacion": 3,  "familia": "Stark"},
+      {"id": "Bran Stark", "edad": 19, "relacion": 4, "generacion": 3,  "familia": "Stark"},
+      {"id": "Rickon Stark", "edad": 30, "relacion": 4, "generacion": 3,  "familia": "Stark"},
+
+      {"id": "Aerys Targaryen", "edad": 76, "relacion": 3, "generacion": 1,  "familia": "Targaryen"},
+      {"id": "Rhaella Targaryen", "edad": 69, "relacion": 3, "generacion": 1,  "familia": "Targaryen"},
+      
+      {"id": "Rhaegar Targaryen", "edad": 30, "relacion": 1, "generacion": 2,  "familia": "Targaryen"},
+      {"id": "Elia Targaryen", "edad": 29, "relacion": 6, "generacion": 2,  "familia": "Targaryen"},
+      {"id": "Viserys Targaryen", "edad": 30, "relacion": 2, "generacion": 2,  "familia": "Targaryen"},
+      {"id": "Daenerys Targaryen", "edad": 30, "relacion": 2, "generacion": 2,  "familia": "Targaryen"},
+      
+      {"id": "Jon Snow", "edad": 27, "relacion": 0, "generacion": 3,  "familia": "Snow"},
+      {"id": "Rhaenys Targaryen", "edad": 25, "relacion": 5, "generacion": 3,  "familia": "Targaryen"},
+      {"id": "Aegon Targaryen", "edad": 26, "relacion": 5, "generacion": 3,  "familia": "Targaryen"}
+    ],
+    "links": [
+      {"source": "Rickard Stark", "target": "Lyarra Stark", "parentesco": "matrimonio"},
+      
+      {"source": "Rickard Stark", "target": "Eddard Stark", "parentesco": "hijo"},
+      {"source": "Rickard Stark", "target": "Brandon Stark", "parentesco": "hijo"},
+      {"source": "Rickard Stark", "target": "Benjen Stark", "parentesco": "hijo"},
+      {"source": "Rickard Stark", "target": "Lyanna Stark", "parentesco": "hijo"},
+      {"source": "Lyarra Stark", "target": "Eddard Stark", "parentesco": "hijo"},
+      {"source": "Lyarra Stark", "target": "Brandon Stark", "parentesco": "hijo"},
+      {"source": "Lyarra Stark", "target": "Benjen Stark", "parentesco": "hijo"},
+      {"source": "Lyarra Stark", "target": "Lyanna Stark", "parentesco": "hijo"},
+      
+      {"source": "Eddard Stark", "target": "Brandon Stark", "parentesco": "hermano"},
+      {"source": "Brandon Stark", "target": "Benjen Stark", "parentesco": "hermano"},
+      {"source": "Benjen Stark", "target": "Lyanna Stark", "parentesco": "hermano"},
+
+      {"source": "Catelyn Stark", "target": "Eddard Stark", "parentesco": "matrimonio"},
+      
+      {"source": "Catelyn Stark", "target": "Robb Stark", "parentesco": "hijo"},
+      {"source": "Catelyn Stark", "target": "Sansa Stark", "parentesco": "hijo"},
+      {"source": "Catelyn Stark", "target": "Arya Stark", "parentesco": "hijo"},
+      {"source": "Catelyn Stark", "target": "Bran Stark", "parentesco": "hijo"},
+      {"source": "Catelyn Stark", "target": "Rickon Stark", "parentesco": "hijo"},
+      {"source": "Eddard Stark", "target": "Robb Stark", "parentesco": "hijo"},
+      {"source": "Eddard Stark", "target": "Sansa Stark", "parentesco": "hijo"},
+      {"source": "Eddard Stark", "target": "Arya Stark", "parentesco": "hijo"},
+      {"source": "Eddard Stark", "target": "Bran Stark", "parentesco": "hijo"},
+      {"source": "Eddard Stark", "target": "Rickon Stark", "parentesco": "hijo"},
+      
+      {"source": "Robb Stark", "target": "Sansa Stark", "parentesco": "hermano"},
+      {"source": "Robb Stark", "target": "Arya Stark", "parentesco": "hermano"},
+      {"source": "Robb Stark", "target": "Bran Stark", "parentesco": "hermano"},
+      {"source": "Robb Stark", "target": "Rickon Stark", "parentesco": "hermano"},
+      {"source": "Sansa Stark", "target": "Arya Stark", "parentesco": "hermano"},
+      {"source": "Sansa Stark", "target": "Bran Stark", "parentesco": "hermano"},
+      {"source": "Sansa Stark", "target": "Rickon Stark", "parentesco": "hermano"},
+      {"source": "Arya Stark", "target": "Bran Stark", "parentesco": "hermano"},
+      {"source": "Arya Stark", "target": "Rickon Stark", "parentesco": "hermano"},
+      {"source": "Bran Stark", "target": "Rickon Stark", "parentesco": "hermano"},
+
+      {"source": "Aerys Targaryen", "target": "Rhaella Targaryen", "parentesco": "matrimonio"},
+      
+      {"source": "Aerys Targaryen", "target": "Rhaegar Targaryen", "parentesco": "hijo"},
+      {"source": "Aerys Targaryen", "target": "Viserys Targaryen", "parentesco": "hijo"},
+      {"source": "Aerys Targaryen", "target": "Daenerys Targaryen", "parentesco": "hijo"},
+      {"source": "Rhaella Targaryen", "target": "Rhaegar Targaryen", "parentesco": "hijo"},
+      {"source": "Rhaella Targaryen", "target": "Viserys Targaryen", "parentesco": "hijo"},
+      {"source": "Rhaella Targaryen", "target": "Daenerys Targaryen", "parentesco": "hijo"},
+
+      {"source": "Rhaegar Targaryen", "target": "Viserys Targaryen", "parentesco": "hermano"},
+      {"source": "Viserys Targaryen", "target": "Daenerys Targaryen", "parentesco": "hermano"},
+    
+      {"source": "Rhaegar Targaryen", "target": "Elia Targaryen", "parentesco": "matrimonio"},
+
+      {"source": "Lyanna Stark", "target": "Rhaegar Targaryen", "parentesco": "matrimonio"},
+      {"source": "Lyanna Stark", "target": "Jon Snow", "parentesco": "hijo"},
+      {"source": "Rhaegar Targaryen", "target": "Jon Snow", "parentesco": "hijo"},
+
+      {"source": "Rhaegar Targaryen", "target": "Rhaenys Targaryen", "parentesco": "hijo"},
+      {"source": "Elia Targaryen", "target": "Rhaenys Targaryen", "parentesco": "hijo"},
+      {"source": "Rhaegar Targaryen", "target": "Aegon Targaryen", "parentesco": "hijo"},
+      {"source": "Elia Targaryen", "target": "Aegon Targaryen", "parentesco": "hijo"},
+      
+      {"source": "Aegon Targaryen", "target": "Rhaenys Targaryen", "parentesco": "hermano"}
+    ]
+  }
+  
