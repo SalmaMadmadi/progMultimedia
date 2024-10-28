@@ -8,7 +8,7 @@ Código de mis prácticas realizadas a lo largo de la asignatura "Programación 
 
 ## 💻 Enlace del resultado 
 
-Para visualizar el proyecto puedes verlo aquí: https://salmamadmadi.github.io/progmultimedia/
+Para visualizar el proyecto puedes verlo aquí: https://salmamadmadi.github.io/progMultimedia/
 
 ## ✏️ Autor 
 
